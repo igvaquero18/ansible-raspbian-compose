@@ -14,6 +14,5 @@ galaxy_info:
     - compose
 
 dependencies:
-  - src: igvaquero18.raspbian_docker
+  - name: igvaquero18.raspbian_docker
     version: master
-    name: docker
