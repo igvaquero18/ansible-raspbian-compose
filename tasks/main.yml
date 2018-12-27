@@ -1,0 +1,16 @@
+---
+# tasks file for raspbian-compose
+
+- name: Get run.sh script for running compose as a container
+  become: yes
+  get_url:
+    url: https://github.com/docker/compose/releases/download/{{ raspbian_compose_version }}/run.sh
+    dest: /usr/local/bin/docker-compose
+    force: yes
+    owner: root
+    group: docker
+    mode: 0755
+  register: url_result
+  retries: 3
+  delay: 1
+  until: url_result.failed is not defined or not url_result.failed

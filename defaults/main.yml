@@ -1,0 +1,4 @@
+---
+# defaults file for raspbian-compose
+
+raspbian_compose_version: 1.23.2
