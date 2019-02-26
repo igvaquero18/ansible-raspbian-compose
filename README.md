@@ -6,7 +6,8 @@ This role installs [Docker Compose](https://docs.docker.com/compose/) on Raspbia
 Requirements
 ------------
 
-Raspbian 9 (stretch) or later. It hasn't been tested with older versions, but that doesn't necessarily mean it can't work. Indeed, it should work with some older Raspbian versions.
+- Raspbian 9 (stretch) or later. It hasn't been tested with older versions, but that doesn't necessarily mean it can't work. Indeed, it should work with some older Raspbian versions.
+- Pip
 
 Role Variables
 --------------
